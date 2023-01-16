@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 400;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    font-family: 'Smythe', cursive;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    background: url(ferks-guare-KEZdWfYD-ow-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 45px;
+    color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-title {
+    font-size: 45px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.main-subtitle {
+    font-size: 22.5px;
+    line-height: 14px;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: start;
+    width: 95%;
+    margin: 25px auto;
+    padding: 25px 0;
+    border-bottom: 1px solid #8B8B8B;
+}
+
+.menu-item-icon {
+    font-size: 75px;
+    opacity: 0.8;
+}
+
+.menu-text-container {
+    margin-left: 12px;
+}
+
+.menu-item-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.menu-item-description {
+    color:  #8B8B8B;
+    margin-bottom: 5px;
+}   
+
+.menu-item-price {
+    font-size: 20px;
+}
+
+.menu-add-btn {
+    font-size: 22px;
+    margin-left: auto;
+    padding: 7.5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #3C3C3C;
+    background-color: #fff;
+    border: 1.5px solid #8B8B8B;
+}
+
+.menu-add-btn:hover {
+    background-color: #8B8B8B;
+}
+
+.cart-title, 
+.cart-item-title,
+.cart-total-title {
+    font-size: 28px;
+}
+
+.cart-title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.cart-remove-btn {
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    color: #8B8B8B;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cart-remove-btn:hover {
+    color: red;
+}
+
+.cart-item-price {
+    margin-left: auto;
+}
+
+.cart-total-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-top: 2px solid #000;
+}
+
+.cart-total-price {
+    font-size: 20px;
+}
+
+.complete-order-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 20px;
+    background-color: #16DB99;
+    color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.order-form-container {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1.5px solid #757575;
+    border-radius: 3px;
+    background-color: #fff;
+    display: none;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 25px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.order-form input, .pay-btn {
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    color: #757575;
+    border: 1.5px solid #757575;
+    border-radius: 5px;
+}
+
+.pay-btn {
+    margin-top: 18px;
+    background-color: #16DB99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

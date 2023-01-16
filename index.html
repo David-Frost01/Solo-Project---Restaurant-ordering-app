@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style sheet -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Google fonts -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <title>Restaurant ordering app</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Jimmy's Diner</h1>
+        <p class="main-subtitle">The best burgers and pizzas in town.</p>
+    </header>
+    <main id="main-content">
+        <section class="menu-ietms-container" id="menu"> <!-- rendered in js --> </section>
+        
+        <section class="cart-container" id="cart">
+            <h3 class="cart-title">Your Order</h3>
+            <div id="cart-item"> <!-- rendered in js --> </div>
+
+            <div class="cart-total-price-container">
+                <h3 class="cart-total-title">Total Price:</h3>
+                <p class="cart-total-price" id="total-price"></p>
+            </div>
+            <button class="complete-order-btn" id="complete-order-btn">Complete order</button>
+        </section>
+    </main>
+    <div class="order-form-container" id="order-form">
+        <h2 class="form-title">Enter card details</h2>
+        <form class="order-form">
+            <input type="text" placeholder="Enter your name" />
+            <input type="text" placeholder="Enter card number"/>
+            <input type="text" placeholder="Enter CVV" />
+            <button class="pay-btn">Pay</button>
+        </form>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
